@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "scripts",
-    "target": "ES2017",
+    "target": "es2017",
     "module": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -12,3 +12,11 @@
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "scripts", "dist"]
 }
+
+// TS
+// target: es2016 - 출력할 코드
+// module: commonjs - module방식인데 브라우저에서 쓸거여서 esnext 모듈 타입 선언
+// strict: true - 문법 검사 엄격
+// esModuleInterop: true - esmodule 호환
+// skipLibCheck: true
+// forceConsistentCasingInFileNames: true - import로 모듈을 불러올 때 대소문자를 구분
